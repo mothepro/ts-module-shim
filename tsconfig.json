@@ -15,7 +15,8 @@
     "experimentalDecorators": true,
     "newLine": "lf",
     "lib": [
-      "es2019"
+      "es2019",
+      "DOM"
     ]
   },
   "exclude": ["dist"]
