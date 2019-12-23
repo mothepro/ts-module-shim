@@ -31,3 +31,4 @@ TypeScript compiler is **large (8 Mb)** and **performance expensive**.
 + Better source map suppoert
 + Support custom tsconfig files
   + Support the `extends` field used in some TSConfigs
++ Add tests
