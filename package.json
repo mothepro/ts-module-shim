@@ -1,0 +1,38 @@
+{
+  "name": "@mothepro/ts-module-shim",
+  "description": "Extends",
+  "author": "Maurice Prosper",
+  "version": "0.0.0",
+  "license": "Apache-2.0",
+  "main": "dist/npm/index.js",
+  "sideEffects": false,
+  "type": "module",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "repository": "https://github.com/mothepro/ts-module-shim",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "npm run build:npm && npm run build:esm",
+    "postinstall": "npm run build",
+    "pretest": "npm run build:npm",
+    "test": "mocha -r should -r should-sinon dist/npm/test/*.js",
+    "prerelease": "npm run build",
+    "release": "np",
+    "build:npm": "tsc",
+    "build:esm": "tsc -p tsconfig.esm.json"
+  },
+  "devDependencies": {
+    "@types/mocha": "^5.2.7",
+    "@types/should-sinon": "^0.0.5",
+    "mocha": "^6.2.2",
+    "np": "^5.2.1",
+    "should": "^13.2.3",
+    "should-sinon": "^0.0.6",
+    "sinon": "^8.0.1",
+    "typescript": "^3.7.4"
+  }
+}
