@@ -22,9 +22,8 @@ TypeScript compiler is **large (8 Mb)** and **performance expensive**.
 
 ## TODO
 
-+ Properly handle typescript file extnesions
-  + All relative imports should use the `.js` as the ESM spec
-  + Typescript files should change this file extension to `.ts`
++ Properly handle [typescript file extnesions](https://github.com/Zoltu/typescript-transformer-append-js-extension)
+  + May need to use the [`transpileOptions` field](https://github.com/microsoft/TypeScript/blob/4fe27222ca2d012dad541b43d791ae12f1cf6985/src/services/transpile.ts)
 + Conditionally load Typescript
   + Import Typescript compiler within this module.
   + Require only one module to be leaded in the HTML
