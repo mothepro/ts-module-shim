@@ -1,6 +1,6 @@
 {
   "name": "@mothepro/ts-module-shim",
-  "description": "Extends",
+  "description": "Extends the 'es-module-shim' module to support TypeScript files",
   "author": "Maurice Prosper",
   "version": "0.0.0",
   "license": "Apache-2.0",
