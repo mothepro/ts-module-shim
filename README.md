@@ -14,7 +14,7 @@ TypeScript compiler is **large (8 Mb)** and **performance expensive**.
 
 <!-- Include typescript and this module -->
 <script src="//unpkg.com/typescript@3.7.4/lib/typescript.js"></script>
-<script type="module" src="//unpkg.com/ts-module-shim/dist/esm/index.js"></script>
+<script type="module" src="//unpkg.com/@mothepro/ts-module-shim/dist/esm/index.js"></script>
 
 <!-- Then include your typescript file as a shim -->
 <script dev-only type="module-shim" src="index.ts"></script>
