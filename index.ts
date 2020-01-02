@@ -30,7 +30,7 @@ importShim.fetch = async urlString => {
       // Source maps file structure fix.
       mapRoot: '../../',
     }, url.pathname)
-      .replace(/["'](.*?)\.js['"]/g, '"$1.ts"')
+      .replace(/["'](\.\.?\/)(.*?)\.js['"]/g, '"$1$2.ts"')
     return new Response(new Blob([result], { type: 'application/javascript' }))
   }
   return response
