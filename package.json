@@ -2,7 +2,7 @@
   "name": "@mothepro/ts-module-shim",
   "description": "Extends the 'es-module-shim' module to support TypeScript files",
   "author": "Maurice Prosper",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "Apache-2.0",
   "main": "dist/npm/index.js",
   "sideEffects": false,
